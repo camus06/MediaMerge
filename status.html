@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Status — MediaMerge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav class="wrap" aria-label="Primary">
+        <a href="index.html" class="word">MediaMerge</a>
+        <div class="nav-links">
+          <a href="index.html#product">Product</a>
+          <a href="index.html#audience">For teams</a>
+          <a href="index.html#moments">How it works</a>
+          <a href="index.html#principles">Principles</a>
+          <a href="signin.html" class="link">Sign in</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            href="index.html#preview"
+            class="btn btn-primary"
+            style="display: none"
+            id="nav-cta"
+            >Explore the system</a
+          >
+          <button
+            class="menu-btn"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu">
+        <a href="index.html#product">Product</a>
+        <a href="index.html#audience">For teams</a>
+        <a href="index.html#moments">How it works</a>
+        <a href="index.html#principles">Principles</a>
+        <a href="signin.html" class="link">Sign in</a>
+        <a
+          href="index.html#preview"
+          class="btn btn-primary"
+          style="width: fit-content"
+          >Explore the system</a
+        >
+      </div>
+    </header>
+    <main id="top">
+      <section class="wrap page-hero">
+        <span class="eyebrow">Status</span>
+        <h1>System status.</h1>
+        <p class="sub">Current state of core MediaMerge services.</p>
+      </section>
+      <section class="wrap">
+        <ul class="status-list">
+          <li>Asset processing <span class="status-dot">Operational</span></li>
+          <li>
+            Rights and licensing <span class="status-dot">Operational</span>
+          </li>
+          <li>Playback delivery <span class="status-dot">Operational</span></li>
+          <li>Recommendations <span class="status-dot">Operational</span></li>
+          <li>Billing <span class="status-dot">Operational</span></li>
+        </ul>
+        <p class="hint" style="margin-top: 24px">
+          This is a static placeholder page for the portfolio prototype — in
+          production this would be backed by real health checks.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <span class="word">MediaMerge</span>
+          <div class="footer-links">
+            <a href="index.html#product">Product</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact</a>
+            <a href="status.html">Status</a>
+          </div>
+        </div>
+        <p class="tagline">
+          MediaMerge is infrastructure for media that deserves context.
+        </p>
+        <p class="copyright">© 2026 MediaMerge</p>
+      </div>
+    </footer>
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>

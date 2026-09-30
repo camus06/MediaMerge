@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>MediaMerge — Media has a lifecycle.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <header id="site-header">
+      <nav class="wrap" aria-label="Primary">
+        <a href="#top" class="word">MediaMerge</a>
+        <div class="nav-links">
+          <a href="#product">Product</a>
+          <a href="#audience">For teams</a>
+          <a href="#moments">How it works</a>
+          <a href="#principles">Principles</a>
+          <a href="signin.html" class="link">Sign in</a>
+        </div>
+        <div class="nav-actions">
+          <a
+            href="#preview"
+            class="btn btn-primary"
+            style="display: none"
+            id="nav-cta"
+            >Explore the system</a
+          >
+          <button
+            class="menu-btn"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+      <div id="mobile-menu">
+        <a href="#product">Product</a>
+        <a href="#audience">For teams</a>
+        <a href="#moments">How it works</a>
+        <a href="#principles">Principles</a>
+        <a href="signin.html" class="link">Sign in</a>
+        <a href="#preview" class="btn btn-primary" style="width: fit-content"
+          >Explore the system</a
+        >
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-ripple" aria-hidden="true"></div>
+        <span class="eyebrow">The media operating system</span>
+        <h1>Media has a <span class="lifecycle-hover">lifecycle.</span></h1>
+        <p class="sub">
+          MediaMerge brings assets, rights, publishing, and streaming into one
+          clear system.
+        </p>
+        <div class="hero-ctas">
+          <a href="#preview" class="btn btn-primary">Explore the system</a>
+          <a href="#moments" class="link hero-secondary-link">See how it works</a>
+        </div>
+
+        <div class="macbook-scroll-stage">
+          <div class="macbook-scroll-device">
+            <div class="macbook-screen-bezel">
+              <span class="macbook-camera" aria-hidden="true"></span>
+              <div class="lifecycle reveal">
+                <div class="lifecycle-strip" role="list" aria-label="Asset lifecycle">
+                  <span class="active">SOURCE</span><span>PROCESS</span
+                  ><span>RIGHTS</span><span>PUBLISH</span><span>PLAY</span>
+                </div>
+                <div class="lifecycle-body">
+                  <div
+                    class="frame"
+                    role="img"
+                    aria-label="Cropped media frame for a documentary titled The Last Monsoon"
+                  ></div>
+                  <dl class="meta-list">
+                    <div><b>The Last Monsoon</b></div>
+                    <div>
+                      <dt style="display: inline">Version</dt>
+                      03
+                    </div>
+                    <div>
+                      <dt style="display: inline">Permission</dt>
+                      India — playback allowed
+                    </div>
+                    <div>
+                      <dt style="display: inline">Processing</dt>
+                      Complete
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="macbook-base" aria-hidden="true">
+              <span class="macbook-notch"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="problem">
+        <h2 class="section-h reveal">Most media systems stop at the file.</h2>
+        <p class="section-sub reveal">
+          A source file is only the beginning. Teams still need to know which
+          version is approved, who owns it, where it can be shown, when
+          permission expires, and whether a viewer is entitled to press play.
+        </p>
+        <ul class="bento-grid reveal" aria-label="Media workflow features">
+          <li class="bento-item bento-item--file">
+            <div class="bento-index">01 / SOURCE</div>
+            <div class="bento-copy">
+              <h3>File</h3>
+              <p>Raw uploads with no identity are just storage, not a system.</p>
+            </div>
+          </li>
+          <li class="bento-item bento-item--version">
+            <div class="bento-index">02 / VERSIONS</div>
+            <div class="bento-copy">
+              <h3>Version</h3>
+              <p>Without a clear master, teams publish the wrong cut.</p>
+            </div>
+          </li>
+          <li class="bento-item bento-item--rights">
+            <div class="bento-index">03 / RIGHTS</div>
+            <div class="bento-copy">
+              <h3>Right</h3>
+              <p>Ownership and license terms decide what can happen next.</p>
+            </div>
+          </li>
+          <li class="bento-item bento-item--audience">
+            <div class="bento-index">04 / ACCESS</div>
+            <div class="bento-copy">
+              <h3>Audience</h3>
+              <p>Plan, territory, and language determine who can see it.</p>
+            </div>
+          </li>
+          <li class="bento-item bento-item--screen">
+            <div class="bento-index">05 / DELIVERY</div>
+            <div class="bento-copy">
+              <h3>Screen</h3>
+              <p>Playback should only ever confirm a permission already granted.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="wrap" id="moments">
+        <h2 class="section-h reveal">One system. Five moments.</h2>
+        <div class="moments reveal" role="group" aria-label="Media lifecycle">
+          <span class="moment-rail" aria-hidden="true"></span>
+          <span class="moment-cursor" aria-hidden="true"></span>
+          <button class="moment" type="button" aria-pressed="true" tabindex="0">
+            <span class="moment-index">01</span>
+            <span class="moment-dot" aria-hidden="true"></span>
+            <span class="moment-title">Collect</span>
+            <span class="moment-copy"
+              >Bring source files, versions, artwork, captions, and metadata
+              together.</span
+            >
+          </button>
+          <button
+            class="moment"
+            type="button"
+            aria-pressed="false"
+            tabindex="-1"
+          >
+            <span class="moment-index">02</span>
+            <span class="moment-dot" aria-hidden="true"></span>
+            <span class="moment-title">Understand</span>
+            <span class="moment-copy"
+              >Give every asset a clear identity, status, and history.</span
+            >
+          </button>
+          <button
+            class="moment"
+            type="button"
+            aria-pressed="false"
+            tabindex="-1"
+          >
+            <span class="moment-index">03</span>
+            <span class="moment-dot" aria-hidden="true"></span>
+            <span class="moment-title">Govern</span>
+            <span class="moment-copy"
+              >Connect content to owners, territories, dates, plans, and
+              permissions.</span
+            >
+          </button>
+          <button
+            class="moment"
+            type="button"
+            aria-pressed="false"
+            tabindex="-1"
+          >
+            <span class="moment-index">04</span>
+            <span class="moment-dot" aria-hidden="true"></span>
+            <span class="moment-title">Publish</span>
+            <span class="moment-copy"
+              >Move approved media into the right collection, channel, or
+              subscription tier.</span
+            >
+          </button>
+          <button
+            class="moment"
+            type="button"
+            aria-pressed="false"
+            tabindex="-1"
+          >
+            <span class="moment-index">05</span>
+            <span class="moment-dot" aria-hidden="true"></span>
+            <span class="moment-title">Play</span>
+            <span class="moment-copy"
+              >Deliver the right content to the right audience at the right
+              time.</span
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="wrap" id="product">
+        <h2 class="section-h reveal">Clarity behind the screen.</h2>
+        <div class="preview reveal" id="preview">
+          <div class="preview-tabs" role="tablist" aria-label="Asset detail">
+            <button role="tab" aria-selected="true">Overview</button>
+            <button role="tab" aria-selected="false">Versions</button>
+            <button role="tab" aria-selected="false">Rights</button>
+            <button role="tab" aria-selected="false">Subtitles</button>
+            <button role="tab" aria-selected="false">Activity</button>
+          </div>
+          <div class="preview-body">
+            <div
+              class="frame"
+              role="img"
+              aria-label="Thumbnail for The Last Monsoon, version 3"
+            ></div>
+            <div>
+              <span class="status-badge ok">Ready to publish</span>
+              <dl class="kv" style="margin-top: 18px">
+                <dt>Language</dt>
+                <dd>English</dd>
+                <dt>Subtitles</dt>
+                <dd>English, Hindi</dd>
+                <dt>Territory</dt>
+                <dd>India</dd>
+                <dt>License</dt>
+                <dd>Active until 31 December 2027</dd>
+                <dt>Tier</dt>
+                <dd>Standard and Premium</dd>
+                <dt>Rights conflict</dt>
+                <dd>None</dd>
+              </dl>
+            </div>
+          </div>
+          <p class="callout wrap">
+            Before content reaches the viewer, the system already knows what it
+            is allowed to do.
+          </p>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <h2 class="section-h reveal">Discovery with a reason.</h2>
+        <div class="rows reveal">
+          <div>
+            <p class="row-label">Because you watched "The Last Monsoon"</p>
+            <div class="cards" role="region" aria-label="Recommended titles" tabindex="0">
+              <div class="cards-track">
+                <div class="cards-set">
+                  <article class="card">
+                    <img src="/images/north-atlantic-drift.jpg" alt="" />
+                    <span class="reason">Popular in your language</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/echoes-of-concrete.jpg" alt="" />
+                    <span class="reason">Under 30 minutes</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/the-last-monsoon.jpg" alt="" />
+                    <span class="reason">New this week</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/north-atlantic-drift.jpg" alt="" />
+                    <span class="reason">Available with your plan</span>
+                  </article>
+                </div>
+                <div class="cards-set" aria-hidden="true">
+                  <article class="card">
+                    <img src="/images/north-atlantic-drift.jpg" alt="" />
+                    <span class="reason">Popular in your language</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/echoes-of-concrete.jpg" alt="" />
+                    <span class="reason">Under 30 minutes</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/the-last-monsoon.jpg" alt="" />
+                    <span class="reason">New this week</span>
+                  </article>
+                  <article class="card">
+                    <img src="/images/north-atlantic-drift.jpg" alt="" />
+                    <span class="reason">Available with your plan</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="rights">
+        <h2 class="section-h reveal">Permission is part of the product.</h2>
+        <p class="section-sub reveal">
+          Media should not disappear into spreadsheets, inboxes, and memory.
+          MediaMerge makes ownership, territory, duration, and access visible
+          before publication.
+        </p>
+        <div class="timeline-wrap reveal">
+          <div class="mono">2026 — 2028</div>
+          <div class="timeline-date-row">
+            <span class="timeline-today-label" aria-hidden="true"></span>
+          </div>
+          <div class="timeline-track">
+            <div class="timeline-fill" title="Active license"></div>
+            <span
+              class="timeline-today"
+              role="img"
+              aria-label="Today on the 2026 to 2028 timeline"
+            >
+              <span class="timeline-today-dot"></span>
+            </span>
+          </div>
+          <div class="timeline-labels">
+            <span>Active license</span><span>Renewal window</span>
+          </div>
+          <ul class="territory-list">
+            <li class="territory-row">
+              <button class="territory-toggle" type="button" aria-expanded="false" aria-controls="territory-india">
+                <span>India</span><span class="avail">Available</span><span class="territory-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="territory-details" id="territory-india" aria-hidden="true">
+                <div class="territory-details-inner">
+                  <dl>
+                    <div><dt>License type</dt><dd>Direct SVOD</dd></div>
+                    <div><dt>Exclusivity</dt><dd>Exclusive</dd></div>
+                    <div><dt>Renewal</dt><dd>Opens 90 days before expiry</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="territory-row">
+              <button class="territory-toggle" type="button" aria-expanded="false" aria-controls="territory-uk">
+                <span>United Kingdom</span><span class="avail">Available</span><span class="territory-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="territory-details" id="territory-uk" aria-hidden="true">
+                <div class="territory-details-inner">
+                  <dl>
+                    <div><dt>License type</dt><dd>Educational SVOD</dd></div>
+                    <div><dt>Exclusivity</dt><dd>Non-exclusive</dd></div>
+                    <div><dt>Renewal</dt><dd>Review before expiry</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li class="territory-row">
+              <button class="territory-toggle" type="button" aria-expanded="false" aria-controls="territory-us">
+                <span>United States</span><span class="restr">Restricted</span><span class="territory-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="territory-details" id="territory-us" aria-hidden="true">
+                <div class="territory-details-inner">
+                  <dl>
+                    <div><dt>License type</dt><dd>Theatrical + physical</dd></div>
+                    <div><dt>Exclusivity</dt><dd>Distributor holdback</dd></div>
+                    <div><dt>Renewal</dt><dd>Eligible from 1 Jan 2028</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="audience-story" id="audience">
+        <div class="audience-stage wrap">
+          <h2 class="section-h reveal audience-heading">
+            Built for the people behind the media.
+          </h2>
+          <div class="audience-stack" aria-label="People who use MediaMerge">
+          <article class="aud">
+            <h3>Creators</h3>
+            <p>Keep every version, credit, and permission connected.</p>
+          </article>
+          <article class="aud">
+            <h3>Content teams</h3>
+            <p>Move from upload to publication without losing context.</p>
+          </article>
+          <article class="aud">
+            <h3>Rights managers</h3>
+            <p>See what is active, expiring, restricted, or unresolved.</p>
+          </article>
+          <article class="aud">
+            <h3>Viewers</h3>
+            <p>
+              Find something meaningful and know why it is available to you.
+            </p>
+          </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="principles">
+        <h2 class="section-h reveal">
+          Designed to make media more understandable.
+        </h2>
+        <div class="principles reveal">
+          <button
+            class="principle-card"
+            type="button"
+            aria-pressed="false"
+            aria-label="Visible: Status, rights, and availability should never be hidden."
+          >
+            <span class="principle-card-inner">
+              <span class="principle-face principle-front" aria-hidden="true">
+                <span class="num">01</span>
+                <span class="principle-title">Visible</span>
+                <span class="principle-hint">Turn to read</span>
+              </span>
+              <span class="principle-face principle-back" aria-hidden="true">
+                <span class="principle-back-label">Principle 01</span>
+                <span class="principle-copy"
+                  >Status, rights, and availability should never be
+                  hidden.</span
+                >
+                <span class="principle-hint">Turn back</span>
+              </span>
+            </span>
+          </button>
+          <button
+            class="principle-card"
+            type="button"
+            aria-pressed="false"
+            aria-label="Responsible: Access should follow permission."
+          >
+            <span class="principle-card-inner">
+              <span class="principle-face principle-front" aria-hidden="true">
+                <span class="num">02</span>
+                <span class="principle-title">Responsible</span>
+                <span class="principle-hint">Turn to read</span>
+              </span>
+              <span class="principle-face principle-back" aria-hidden="true">
+                <span class="principle-back-label">Principle 02</span>
+                <span class="principle-copy"
+                  >Access should follow permission.</span
+                >
+                <span class="principle-hint">Turn back</span>
+              </span>
+            </span>
+          </button>
+          <button
+            class="principle-card"
+            type="button"
+            aria-pressed="false"
+            aria-label="Accessible: The interface should work for different bodies, devices, languages, and ways of thinking."
+          >
+            <span class="principle-card-inner">
+              <span class="principle-face principle-front" aria-hidden="true">
+                <span class="num">03</span>
+                <span class="principle-title">Accessible</span>
+                <span class="principle-hint">Turn to read</span>
+              </span>
+              <span class="principle-face principle-back" aria-hidden="true">
+                <span class="principle-back-label">Principle 03</span>
+                <span class="principle-copy"
+                  >The interface should work for different bodies, devices,
+                  languages, and ways of thinking.</span
+                >
+                <span class="principle-hint">Turn back</span>
+              </span>
+            </span>
+          </button>
+          <button
+            class="principle-card"
+            type="button"
+            aria-pressed="false"
+            aria-label="Human: Technology should reduce confusion, not create more of it."
+          >
+            <span class="principle-card-inner">
+              <span class="principle-face principle-front" aria-hidden="true">
+                <span class="num">04</span>
+                <span class="principle-title">Human</span>
+                <span class="principle-hint">Turn to read</span>
+              </span>
+              <span class="principle-face principle-back" aria-hidden="true">
+                <span class="principle-back-label">Principle 04</span>
+                <span class="principle-copy"
+                  >Technology should reduce confusion, not create more of
+                  it.</span
+                >
+                <span class="principle-hint">Turn back</span>
+              </span>
+            </span>
+          </button>
+        </div>
+      </section>
+
+      <section class="final">
+        <div class="hero-ripple final-ripple" aria-hidden="true"></div>
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="wrap">
+          <h2 class="reveal">Move media with confidence.</h2>
+          <p class="sub reveal">
+            From source file to screen, MediaMerge keeps the story and its
+            permission together.
+          </p>
+          <div class="hero-ctas reveal">
+            <a href="#preview" class="btn btn-primary">Explore the system</a>
+            <a href="#principles" class="btn btn-ghost">Read the principles</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <div class="footer-grid">
+          <span class="word">MediaMerge</span>
+          <div class="footer-links">
+            <a href="#product">Product</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="contact.html">Contact</a>
+            <a href="status.html">Status</a>
+          </div>
+        </div>
+        <p class="tagline">
+          MediaMerge is infrastructure for media that deserves context.
+        </p>
+        <p class="copyright">© 2026 MediaMerge</p>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">MediaMerge</div>
+    </footer>
+
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
